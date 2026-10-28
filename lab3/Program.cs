@@ -87,7 +87,7 @@ namespace var3
                 }
             }
             double M = 5.0;
-            bool found = FileTasks.Task5_3(xmlBinPath, m);
+            bool found = FileTasks.Task5_3(xmlBinPath, M);
             Console.WriteLine($"\nИмеется ли пассажир с одной вещью массой менее {M} кг? {found}");
 
 
