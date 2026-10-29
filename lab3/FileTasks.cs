@@ -16,6 +16,7 @@ namespace var3
                 }
             }
         }
+        //ЗАДАНИЕ 4
         public static void Task4_3(string inputPath, string outputPath, int m, int n)
         {
             using (BinaryReader reader = new BinaryReader(File.Open(inputPath, FileMode.Open)))

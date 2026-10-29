@@ -42,28 +42,18 @@ namespace var3
         public MatrixTasks(int n, bool isThirdMatrix)
         {
             _matrix = new int[n, n];
+            int val = 1;
 
-            if (n == 5)
+            for (int d = 2 * n - 2; d >= n - 1; d--)
             {
-                int[,] pattern = new int[5, 5]
+                int startI = Math.Min(n - 1, d);
+                int endI = d - (n - 1);
+                for (int i = startI; i >= endI; i--)
                 {
-                    { 0, 0, 0, 0, 15 },
-                    { 0, 0, 0, 14, 10 },
-                    { 0, 0, 13, 9, 6 },
-                    { 0, 12, 8, 5, 3 },
-                    { 11, 7, 4, 2, 1 }
-                };
-
-                for (int i = 0; i < 5; i++)
-                    for (int j = 0; j < 5; j++)
-                        _matrix[i, j] = pattern[i, j];
-            }
-            else
-            {
-                int val = 1;
-                for (int i = n - 1; i >= 0; i--)
-                    for (int j = n - 1; j >= 0; j--)
-                        _matrix[i, j] = val++;
+                    int j = d - i;
+                    _matrix[i, j] = val;
+                    val++;
+                }
             }
         }
         public MatrixTasks(int rows, int cols, bool isEmpty)

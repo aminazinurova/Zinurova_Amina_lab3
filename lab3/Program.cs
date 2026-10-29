@@ -12,10 +12,10 @@ namespace var3
             Console.WriteLine("\n1.Первый массив:");
             MatrixTasks m1 = new MatrixTasks(2, 3);
             Console.WriteLine(m1);
-            Console.WriteLine("\n2.Второй массив (4x4):");
+            Console.WriteLine("\n2.Второй массив:");
             MatrixTasks m2 = new MatrixTasks(4);
             Console.WriteLine(m2);
-            Console.WriteLine("\n3.Третий массив (5x5):");
+            Console.WriteLine("\n3.Третий массив:");
             MatrixTasks m3 = new MatrixTasks(5, true);
             Console.WriteLine(m3);
 
